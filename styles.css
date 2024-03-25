@@ -50,7 +50,7 @@ blockquote {
 
 img {
   font-style: italic;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   vertical-align: middle;
 }
@@ -59,6 +59,7 @@ img {
   padding: 2rem 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header__logo-wrapper {
   width: 40%;
@@ -70,6 +71,7 @@ img {
 
 .header__nav {
   width: 60%;
+  max-width: 300px;
 }
 
 .header__nav-list {
@@ -111,6 +113,7 @@ img {
   padding: 1em 0;
   background-color: var(--bright-blue);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .more-info {
@@ -178,5 +181,89 @@ img {
 }
 
 .early-access {
-  background-color: var(--light-gray-blue);
+  background-color: var(--desaturated-blue);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.early-access__title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.early-access__content {
+  line-height: 1.5;
+}
+
+.page-form--narrow {
+  margin: 2rem 0;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.page-form__email-input--light {
+  background-color: white;
+  border: none;
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.footer__contact-links {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer__contact-link-icon {
+  margin-right: 1rem;
+}
+
+.footer__link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.company-legal {
+  margin-top: 3rem;
+}
+
+@media (width > 1000px) {
+  body {
+    padding: 1rem 3rem;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  .main {
+    margin: 4rem 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: unset;
+  }
+
+  .main__title {
+    font-size: 2rem;
+  }
+
+  .page-form--row {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .page-form--row .page-form__email-input {
+    width: 60%;
+  }
+  .page-form--row .page-form__button {
+    width: 40%;
+  }
 }
