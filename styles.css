@@ -50,8 +50,7 @@ blockquote {
 
 img {
   font-style: italic;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -249,6 +248,11 @@ img {
     justify-content: space-between;
     align-items: center;
     text-align: unset;
+    gap: 5rem;
+  }
+
+  .main__image {
+    width: 100%;
   }
 
   .main__title {
@@ -265,5 +269,45 @@ img {
   }
   .page-form--row .page-form__button {
     width: 40%;
+  }
+
+  .more-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .more-info--position {
+    margin: 3rem 0;
+  }
+
+  .more-info__title {
+    font-size: 2.5rem;
+    text-align: initial;
+  }
+
+  .more-info__content-wrapper {
+    width: 100%;
+  }
+
+  .more-info__wrapper {
+    text-align: initial;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .more-info__image {
+    width: 70%;
+  }
+
+  .more-info__content {
+    width: 70%;
+  }
+
+  .card {
+    margin: 0;
+    width: 50%;
   }
 }
