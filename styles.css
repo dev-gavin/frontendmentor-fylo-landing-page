@@ -21,6 +21,7 @@ body {
   margin: 0;
   font-family: Raleway, sans-serif;
   background-color: var(--light-gray-blue);
+  min-height: 100vh;
 }
 
 button {
@@ -234,12 +235,11 @@ img {
 }
 
 @media (width > 1000px) {
-  body {
-    padding: 1rem 3rem;
+  .content {
+    padding: 0 3rem;
     max-width: 1440px;
     margin-inline: auto;
   }
-
   .main {
     margin: 4rem 0;
     display: flex;
@@ -309,5 +309,33 @@ img {
   .card {
     margin: 0;
     width: 50%;
+  }
+
+  .early-access {
+    padding: 2.5rem 0;
+  }
+
+  .early_access__wrapper {
+    display: flex;
+    text-align: initial;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25%;
+  }
+
+  .page-form__button--small {
+    width: 40%;
+  }
+
+  .footer__logo-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    margin-inline: auto;
   }
 }
